@@ -1,9 +1,7 @@
 ---
 publishDate: Dec 15 2022
 title: Edukativna slikovnica za djecu
-description: Nibh senectus lacinia volutpat nostra taciti ac posuere, dictum ultricies
-  dictumst luctus in vehicula, mus molestie venenatis penatibus ridiculus elementum.
-  Phasellus sollicitudin dignissim parturient.
+description: Preuzmite edukativnu slikovnicu koju su ilustrirala djeca
 image: "~/assets/images/prica.jpg"
 tags: []
 

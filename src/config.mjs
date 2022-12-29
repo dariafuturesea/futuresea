@@ -1,7 +1,7 @@
 export const SITE = {
-	name: 'AstroWind',
+	name: 'FutureSea',
 
-	origin: 'https://astrowind.vercel.app',
+	origin: 'https://futuresea.eu',
 	basePathname: '/',
 	trailingSlash: false,
 

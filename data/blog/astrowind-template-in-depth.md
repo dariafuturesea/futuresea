@@ -1,11 +1,9 @@
 ---
 publishDate: Nov 18 2022
-title: Ovo je test
-description: Ornare cum cursus laoreet sagittis nunc fusce posuere per euismod dis
-  vehicula a, semper fames lacus maecenas dictumst pulvinar neque enim non potenti.
-  Torquent hac sociosqu eleifend potenti.
+title: Svečana dodjela stipendija i donacija Zaklade Adris
+description: ''
 image: "~/assets/images/adris.jpg"
-category: Tutorials
+category: []
 tags: []
 canonical: https://astrowind.vercel.app/astrowind-template-in-depth
 

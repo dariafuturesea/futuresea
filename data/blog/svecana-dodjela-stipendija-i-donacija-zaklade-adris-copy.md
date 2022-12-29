@@ -1,6 +1,6 @@
 ---
 publishDate: Dec 22 2022
-title: Svečana dodjela stipendija i donacija Zaklade Adris-(copy)
+title: Edukativna slikovnica za djecu
 description: U Preporodnoj dvorani Hrvatske akademije znanosti i umjetnosti 15. studenog
   2022. godine održana je svečana dodjela stipendija i donacija Zaklade Adris.
 image: "~/assets/images/prica.jpg"

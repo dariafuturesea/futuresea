@@ -1,7 +1,7 @@
 ---
 publishDate: Dec 22 2022
 title: Edukativna slikovnica za djecu
-description: Preuzmite edukativnu slikovnicu koju su ilustrirala djeca
+description: Preuzmite edukativnu slikovnicu koju su ilustrirala djeca.
 image: "~/assets/images/prica.jpg"
 category: []
 tags: []

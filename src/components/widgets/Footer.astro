@@ -54,11 +54,12 @@ const social = [
 
 <footer class="border-t border-gray-200 dark:border-slate-800">
 	<div class="max-w-6xl mx-auto px-4 sm:px-6">
-		<div class="grid grid-cols-12 gap-4 gap-y-8 sm:gap-8 py-8 md:py-12">
+		<div class="grid grid-cols-6 gap-4 gap-y-8 sm:gap-8 py-8 md:py-12">
 			<div class="col-span-12 lg:col-span-4">
-				<div class="mb-2">
+				<!--<div class="mb-2">
 					<a class="inline-block font-bold text-xl" href={getHomePermalink()}>FutureSea.eu</a>
 				</div>
+				
 				<div class="text-sm text-gray-600">
 					<a
 						class="text-gray-600 hover:text-gray-700 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
@@ -69,8 +70,26 @@ const social = [
 						href="#">Privacy Policy</a
 					>
 				</div>
+				-->
 			</div>
-			
+			<div class="col-span-4 md:col-span-2 lg:col-span-2">
+				<div class="grid lg:grid-cols-2 md:grid-cols-2 gap-2">
+					<div class="lg:mb-0 mb-0">
+					  <a href="https://www.adris.hr/odnosi-s-javnoscu/zaklada-adris/o-zakladi/" target="_blank"><img
+						src="https://www.adris.hr/css/images/adris-logo.svg"
+						class="w-full h-3/6"
+					  /></a>
+					</div>
+					<div class="lg:mb-0 mb-0">
+						<a href="https://www.izor.hr/" target="_blank"><img
+							src="https://acta.izor.hr/wp/wp-content/uploads/2017/08/PNG-mali.png"
+							class="w-full h-3/6"
+						  /></a>
+					</div>
+				</div>
+			</div>
+
+
 			<!-- lista linkova iz array gore
 			{
 				links.map(({ title, items }) => (

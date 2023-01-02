@@ -8,8 +8,8 @@ export const SITE = {
 	title: 'More budućnosti…',
 	description: '…je projekt koji za cilj ima prijenos znanja i jačanje svijesti o važnosti oceana za život na Zemlji kod djece školskog uzrasta. Projekt je sufinanciran sredstvima Zaklade Adris kroz Program Stvaralaštvo, ekologija, baština i dobrota, a provodi ga Institut za oceanografiju i ribarstvo. ',
 
-	googleAnalyticsId: false, // or "G-51MGD17LC3",
-	googleSiteVerificationId: 'orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M',
+	googleAnalyticsId: "G-51MGD17LC3", // or false,
+	//googleSiteVerificationId: 'orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M',
 };
 
 export const BLOG = {

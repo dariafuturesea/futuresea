@@ -57,7 +57,6 @@ export default defineConfig({
 					{ name: 'image', widget: 'image', choose_url: true, label: 'Image', default: false },
 					{ name: 'category', widget: 'list', label: 'Category', default: false },
 					{ name: 'tags', widget: 'list', label: 'Tags', default: false },
-                    { name: 'canonical', widget: 'string', label: 'Link', default: false },
                     { name: 'body', widget: 'markdown', label: 'Post Body' },
                   ],
               	}],

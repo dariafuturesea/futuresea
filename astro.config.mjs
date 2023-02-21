@@ -34,7 +34,7 @@ export default defineConfig({
                 branch: 'main',
               },
               media_folder: 'src/assets/images',
-              public_folder: './src/assets/images',
+              public_folder: '~/assets/images',
               collections: [
                 {
                   name: 'posts',

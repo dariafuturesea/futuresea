@@ -30,8 +30,8 @@ export default defineConfig({
             config: {
               backend: {
                 name: 'git-gateway',
-                repo: 'roundcopy/pulent-2022',
-                branch: 'master',
+                repo: 'dariafuturesea/futuresea',
+                branch: 'main',
               },
               media_folder: 'public/images',
               public_folder: '/images',

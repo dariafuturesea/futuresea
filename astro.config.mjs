@@ -61,7 +61,7 @@ export default defineConfig({
                     { name: 'canonical', widget: 'string', label: 'Slug', default: false },
                     { name: 'body', widget: 'markdown', label: 'Post Body' },
                   ],
-              }
+              	}],
 			},
 		}),
 		tailwind({

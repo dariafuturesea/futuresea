@@ -8,6 +8,7 @@ import sitemap from '@astrojs/sitemap';
 import image from '@astrojs/image';
 import mdx from '@astrojs/mdx';
 import partytown from '@astrojs/partytown';
+import NetlifyCMS from 'astro-netlify-cms';
 
 import { remarkReadingTime } from './src/utils/frontmatter.mjs';
 import { SITE } from './src/config.mjs';
@@ -25,6 +26,44 @@ export default defineConfig({
 	output: 'static',
 
 	integrations: [
+		NetlifyCMS({
+            config: {
+              backend: {
+                name: 'git-gateway',
+                repo: 'roundcopy/pulent-2022',
+                branch: 'master',
+              },
+              media_folder: 'public/images',
+              public_folder: '/images',
+              publish_mode: 'editorial_workflow',
+              collections: [
+                {
+                  name: 'posts',
+                  label: 'Posts',
+                  label_singular: 'Post',
+                  folder: 'src/pages/posts',
+                  create: true,
+                  delete: true,
+                  fields: [
+					{
+						name: 'publishDate',
+						widget: 'datetime',
+						format: 'YYYY-MM-DDTHH:mm:ssZ',
+						date_format: 'DD MMM YYYY',
+						time_format: false,
+						label: 'Publish Date',
+					},
+                    { name: 'title', widget: 'string', label: 'Post Title' },
+                    { name: 'description', widget: 'string', label: 'Description', required: false },
+					{ name: 'image', widget: 'image', choose_url: true, label: 'Image', default: false },
+					{ name: 'category', widget: 'list', label: 'Category', default: false },
+					{ name: 'tags', widget: 'list', label: 'Tags', default: false },
+                    { name: 'canonical', widget: 'string', label: 'Slug', default: false },
+                    { name: 'body', widget: 'markdown', label: 'Post Body' },
+                  ],
+              }
+			},
+		}),
 		tailwind({
 			config: {
 				applyBaseStyles: false,

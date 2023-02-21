@@ -43,5 +43,8 @@
   },
   "engines": {
     "node": "^14.15.0 || >=16.0.0"
+  },
+  "dependencies": {
+    "astro-netlify-cms": "^0.5.3"
   }
 }

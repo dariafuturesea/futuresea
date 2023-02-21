@@ -33,15 +33,14 @@ export default defineConfig({
                 repo: 'dariafuturesea/futuresea',
                 branch: 'main',
               },
-              media_folder: 'public/images',
+              media_folder: 'src/assets/images',
               public_folder: '/images',
-              publish_mode: 'editorial_workflow',
               collections: [
                 {
                   name: 'posts',
                   label: 'Posts',
                   label_singular: 'Post',
-                  folder: 'src/pages/posts',
+                  folder: 'data/blog',
                   create: true,
                   delete: true,
                   fields: [

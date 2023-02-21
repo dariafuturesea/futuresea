@@ -1,5 +1,5 @@
 ---
-publishDate: Nov 18 2022
+publishDate: 2022-11-18T18:34:44+01:00
 title: Svečana dodjela stipendija i donacija Zaklade Adris
 description: U Preporodnoj dvorani Hrvatske akademije znanosti i umjetnosti 15. studenog
   2022. godine održana je svečana dodjela stipendija i donacija Zaklade Adris.

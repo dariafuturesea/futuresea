@@ -7,6 +7,5 @@ category: false
 tags:
   - filip
   - dome
-canonical: https://futuresea.eu/fd
 ---
 Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla

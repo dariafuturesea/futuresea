@@ -1,9 +1,10 @@
 ---
-publishDate: 2023-02-25T21:32:12+01:00
+publishDate: 2023-02-25T21:55:24+01:00
 title: Projekt "More budućnosti" doprinosi ciljevima Desetljeća znanosti o
   oceanima za održivi razvoj
-image: ~/assets/images/darda.jpg
-category: []
+image: ~/assets/images/darda2.jpg
+category:
+  - radionice
 tags: false
 ---
 <!--\\[if gte mso 9]><xml>

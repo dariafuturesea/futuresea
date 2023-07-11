@@ -1,5 +1,5 @@
 ---
-publishDate: 2023-07-11T19:41:40+02:00
+publishDate: 2023-06-02T19:41:40+02:00
 title: Veliki broj djece sudjelovao u radionicama Mora budućnosti
 image: ~/assets/images/351126076_3486417578236556_44113834053772745_n.jpg
 category: false

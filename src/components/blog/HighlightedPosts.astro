@@ -1,7 +1,7 @@
 ---
 import Grid from '~/components/blog/Grid.astro';
 
-import { findPostsByIds } from '~/utils/posts';
+import { findLatestPosts } from '~/utils/posts';
 
 const ids = [
 	'more-u-djecjoj-masti',
@@ -9,7 +9,8 @@ const ids = [
 	'edukativna-slikovnica',
 	'dodjela-donacija',
 ];
-const posts = await findPostsByIds(ids);
+const count = 4;
+const posts = await findLatestPosts({ count });
 ---
 
 <section class="px-4 py-16 mx-auto max-w-6xl lg:py-20">

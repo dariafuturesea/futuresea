@@ -3,7 +3,8 @@ publishDate: 2023-06-16T19:45:44+02:00
 title: Za kraj školske godine održane radionice u Zagrebu
 description: ""
 image: ~/assets/images/347403658_156374290769967_3351460278117872696_n.jpg
-category: false
+category:
+  - radionice
 tags: false
 ---
 Danas završavamo ciklus radionica "More budućnosti" za ovu školsku godinu! 

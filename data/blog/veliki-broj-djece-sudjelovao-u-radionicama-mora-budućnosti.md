@@ -2,7 +2,8 @@
 publishDate: 2023-06-02T19:41:40+02:00
 title: Veliki broj djece sudjelovao u radionicama Mora budućnosti
 image: ~/assets/images/351126076_3486417578236556_44113834053772745_n.jpg
-category: false
+category:
+  - radionice
 tags: false
 ---
 Bliži se kraj školske godine, a time i završetak ciklusa naših radionica. Ponosno možemo reći da smo održale 30 radionica u osnovnim školama diljem Hrvatske. Put nas je odveo u Krapinu, Osijek, Sarvaš, Vladislavce, Čepin, Galižanu, Tijaricu, Grab, Čistu Veliku, Šibenik, Primošten, Postira, Omiš, a nekoliko radionica smo održale i u Splitu. Još nas čekaju Zagreb i Opuzen, ali stići ćemo i do njih! 

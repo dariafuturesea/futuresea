@@ -6,7 +6,11 @@ category:
   - "false"
 tags: false
 ---
-Dizajnirali smo zabavne i edukativne radne listiće s morskom temom. Listiće dajte svojoj djeci dok putujete prema moru ili dok zbog velikih vrućina morate biti kod kuće kako bi se zabavili i naučili nešto novo. Sigurni smo se da će se djeca zabaviti, a istovremeno upoznati raznolikost podvodnog svijeta i naučiti nešto novo. Smatramo da je ovo jedan od načina da potaknemo njihovu znatiželju i brigu prema moru i njegovim stanovnicima. Uskoro stiže još…
+Dizajnirali smo zabavne i edukativne radne listiće s morskom tematikom koje možete iskoristiti za vrijeme putovanja prema moru ili dok ste kod kuće tijekom vrućih dana. Igra koja će zabaviti vašu djecu i omogućiti im da nauče nešto novo o raznolikom podvodnom svijetu. 
 
-[Radni listić 1 ](https://tinyurl.com/2z9d94h5)
-[Radni listić 2](https://tinyurl.com/2p9fjczf)
+Vjerujemo da će djeca uživati u ovoj aktivnosti dok istovremeno istražuju morske životinje i stječu nova znanja. Smatramo da je ovo izvrstan način da potaknemo njihovu znatiželju te ulijemo svijest o važnosti mora i njegovih stanovnika. 
+
+Pridružite nam se i uskoro donosimo još novosti...
+
+* [Radni listić 1](https://tinyurl.com/2z9d94h5)
+* [Radni listić 2](https://tinyurl.com/2p9fjczf)

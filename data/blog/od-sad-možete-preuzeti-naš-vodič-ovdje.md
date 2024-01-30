@@ -1,6 +1,6 @@
 ---
 publishDate: 2024-01-30T14:00:49+01:00
-title: Od sad možete preuzeti naš vodič ovdje
+title: Od sad možete preuzeti naš vodič i ovdje
 image: ~/assets/images/381040806_216444694762926_1753681676542309423_n.jpg
 category: false
 tags: false

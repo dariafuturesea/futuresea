@@ -1,7 +1,7 @@
 ---
 publishDate: 2024-02-05T11:32:26+01:00
 title: Koliko su teme vezne za more zastupljene u udžbenicima u osnovnoj školi?
-image: ~/assets/images/clipboard01.jpg
+image: ~/assets/images/clipboard012.jpg
 category: false
 tags: false
 ---

@@ -2,7 +2,7 @@
 publishDate: 2024-08-23T15:17:04+02:00
 title: "Pridružite se globalnoj kampanji #EUBeachCleanup 2024"
 description: EUBeachCleanup2024
-image: ~/assets/images/456063444_424144970659563_1882306658644295035_n.jpg
+image: ~/assets/images/photo-algerie-2.png
 category: false
 tags: false
 ---

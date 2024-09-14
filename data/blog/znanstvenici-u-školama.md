@@ -1,7 +1,7 @@
 ---
 publishDate: 2024-09-09T20:20:25+02:00
 title: Znanstvenici u školama
-image: ~/assets/images/artboard-2-1-psv6uye232rgjsokmztuwg5ubu33gh23jg48cld9qo.png
+image: ~/assets/images/ja-istrazujem-web.png
 category: false
 tags: false
 ---

@@ -1,5 +1,5 @@
 ---
-publishDate: 2025-08-13T22:06:17+02:00
+publishDate: 2025-08-13T22:37:34+02:00
 title: "Oceanska pismenost u učionici: praktične prezentacije za nastavnike i
   edukatore"
 image: ~/assets/images/ocean-u-našim-rukama.png

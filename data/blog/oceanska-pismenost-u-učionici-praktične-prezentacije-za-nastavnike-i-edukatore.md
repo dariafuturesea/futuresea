@@ -10,7 +10,7 @@ Dragi nastavnici i edukatori, pripremili smo za vas prezentacije koje objašnjav
 
 Prezentacije su zamišljene kao dodatni resurs za tumačenje tema vezanih uz more, koje možete nadopunjavati vlastitim aktivnostima i zadacima. Obiluju šarenim ilustracijama čineći učenje o oceanu zanimljivim i poticajnim za vaše učenike. Iskoristite ih kao podršku vašem nastavnom planu i potaknite učenike da kroz istraživanje i interakciju bolje razumiju važnost oceana za naš planet.
 
-Poveznice na prezentacije prema principima:
+Poveznice na video prezentacije prema principima:
 
 [Glavni principi oceanske pismenosti](https://drive.google.com/file/d/13xhWFA44EJvTA26BDvBid1y694LutHvT/view?usp=sharing)
 

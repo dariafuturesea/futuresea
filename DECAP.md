@@ -39,8 +39,8 @@ This method uses GitHub for authentication directly, without requiring Netlify I
 1. Go to GitHub Settings → Developer settings → OAuth Apps
 2. Click **New OAuth App**
 3. Fill in the details:
-   - **Application name**: `Your Site CMS` (or any name)
-   - **Homepage URL**: `https://your-site.netlify.app`
+   - **Application name**: `FutureSea CMS` (or any name)
+   - **Homepage URL**: `https://futuresea.eu`
    - **Authorization callback URL**: `https://api.netlify.com/auth/done`
 4. Click **Register application**
 5. Copy the **Client ID**
@@ -77,7 +77,7 @@ backend:
 1. Create a free Auth0 account at https://auth0.com
 2. Create a new application (Single Page Application)
 3. Configure allowed callbacks:
-   - `https://your-site.netlify.app/admin/`
+   - `https://futuresea.eu/admin/`
    - `http://localhost:4321/admin/` (for local dev)
 4. Configure allowed logout URLs: same as above
 5. Note your **Domain** and **Client ID**
@@ -244,13 +244,13 @@ If using the legacy Netlify Identity, add the widget script to your main layout 
 ### Step 5: Access the CMS
 
 **For GitHub OAuth:**
-1. Navigate to `https://your-site.netlify.app/admin/`
+1. Navigate to `https://futuresea.eu/admin/`
 2. Click **Login with GitHub**
 3. Authorize the app
 4. You should now see the Decap CMS dashboard!
 
 **For Auth0:**
-1. Navigate to `https://your-site.netlify.app/admin/`
+1. Navigate to `https://futuresea.eu/admin/`
 2. Click **Login**
 3. Use your Auth0 credentials
 4. You should now see the Decap CMS dashboard!
@@ -259,7 +259,7 @@ If using the legacy Netlify Identity, add the widget script to your main layout 
 1. Go to your Netlify dashboard → **Identity** tab
 2. Click **Invite users** and invite yourself
 3. Check your email and set your password
-4. Navigate to `https://your-site.netlify.app/admin/`
+4. Navigate to `https://futuresea.eu/admin/`
 5. Login with your credentials
 
 ## Troubleshooting

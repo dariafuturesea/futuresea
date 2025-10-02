@@ -1,257 +1,177 @@
-# 🚀 AstroWind
+# More Budućnosti / FutureSea
 
-<img src="lighthouse-score.png" align="right"
-     alt="AstroWind Lighthouse Score" width="100" height="358">
+**More Budućnosti** (FutureSea) is a project aimed at transferring knowledge and raising awareness about the importance of the ocean for life on Earth among school-age children. The project is co-financed by the Adris Foundation and implemented by the Institute of Oceanography and Fisheries.
 
-**AstroWind** is a free and open-source template to make your website using **[Astro](https://astro.build/) + [Tailwind CSS](https://tailwindcss.com/)**. Ready to start a new project and designed taking into account best practices.
+🌐 **Website**: [https://futuresea.eu](https://futuresea.eu)
+
+## About the Project
+
+The project focuses on ocean literacy education in Croatia, providing educational resources, workshops, and materials for schools and educators. Through interactive content and practical presentations, we aim to increase understanding of ocean conservation and its importance for future generations.
+
+## Technical Stack
+
+- **Framework**: [Astro](https://astro.build/) v5.14.1
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) v3.4
+- **CMS**: [Decap CMS](https://decapcms.org/) (formerly Netlify CMS)
+- **Icons**: [Astro Icon](https://www.astroicon.dev/) with Iconify
+- **Deployment**: Netlify
+- **Node Version**: 18+
 
 ## Features
 
-- ✅ Integration with **Tailwind CSS** ([@astrojs/tailwind](https://docs.astro.build/en/guides/integrations-guide/tailwind/)) supporting **Dark mode**.
-- ✅ **Production-ready** scores in [Lighthouse](https://web.dev/measure/) and [PageSpeed Insights](https://pagespeed.web.dev/) reports.
-- ✅ **Fast and SEO friendly blog** with automatic **RSS feed** ([@astrojs/rss](https://docs.astro.build/en/guides/rss/)), [**MDX** support](https://docs.astro.build/en/guides/integrations-guide/mdx/), **Categories & Tags**, **Social Share** buttons, ...
-- ✅ **Image optimization** ([@astrojs/images](https://docs.astro.build/en/guides/integrations-guide/image/)) and **Font optimization**.
-- ✅ Generation of **project sitemap** based on your routes ([@astrojs/sitemap](https://docs.astro.build/en/guides/integrations-guide/sitemap/)).
-- ✅ **Open Graph tags** for social media sharing.
-- ✅ **Analytics** built-in Google Analytics, and Splitbee integration.
+- ✅ **Astro v5** - Latest stable version with modern features
+- ✅ **Ocean Literacy Blog** - Educational content with MDX support
+- ✅ **Image Optimization** - Built-in Astro assets for fast loading
+- ✅ **Dark Mode** - Full dark mode support via Tailwind CSS
+- ✅ **SEO Optimized** - Custom meta tags, Open Graph, and Twitter Cards
+- ✅ **Decap CMS** - Content management with GitHub OAuth
+- ✅ **RSS Feed** - Automatic feed generation for blog posts
+- ✅ **Responsive Design** - Mobile-first approach
+- ✅ **Fast Performance** - Optimized for speed and accessibility
 
-<br>
-
-<img src="./screenshot.jpg" alt="AstroWind Theme Screenshot">
-
-[![onWidget](https://custom-icon-badges.demolab.com/badge/made%20by%20-onWidget-556bf2?style=flat-square&logo=onwidget&logoColor=white&labelColor=101827)](https://onwidget.com)
-[![License](https://img.shields.io/github/license/onwidget/astrowind?style=flat-square&color=dddddd&labelColor=000000)](https://github.com/onwidget/astrowind/blob/main/LICENSE.md)
-[![Maintained](https://img.shields.io/badge/maintained%3F-yes-brightgreen.svg?style=flat-square)](https://github.com/onwidget)
-[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/onwidget/astrowind#contributing)
-[![Known Vulnerabilities](https://snyk.io/test/github/onwidget/astrowind/badge.svg?style=flat-square)](https://snyk.io/test/github/onwidget/astrowind)
-[![Stars](https://img.shields.io/github/stars/onwidget/astrowind.svg?style=social&label=stars&maxAge=86400&color=ff69b4)](https://github.com/onwidget/astrowind)
-[![Forks](https://img.shields.io/github/forks/onwidget/astrowind.svg?style=social&label=forks&maxAge=86400&color=ff69b4)](https://github.com/onwidget/astrowind)
-
-<br>
-
-<details open>
-<summary>Table of Contents</summary>
-
-- [Demo](#demo)
-- [Getting started](#getting-started)
-  - [Project structure](#project-structure)
-  - [Commands](#commands)
-  - [Configuration](#configuration)
-  - [Deploy](#deploy)
-- [Roadmap](#roadmap)
-- [Frequently Asked Questions](#frequently-asked-questions)
-- [Related Projects](#related-projects)
-- [Contributing](#contributing)
-- [Acknowledgements](#acknowledgements)
-- [License](#license)
-
-</details>
-
-<br>
-
-## Demo
-
-📌 [https://astrowind.vercel.app/](https://astrowind.vercel.app/)
-
-<br>
-
-## Getting started
-
-**AstroWind** tries to give you quick access to creating a website using [Astro](https://astro.build/) + [Tailwind CSS](https://tailwindcss.com/). It's a free theme focuses on simplicity, good practices and high performance.
-
-Very little vanilla javascript is used only to provide basic functionality so that each developer decides which framework (React, Vue, Svelte, Solid JS...) to use and how to approach their goals..
-
-### Project structure
-
-Inside AstroWind template, you'll see the following folders and files:
+## Project Structure
 
 ```
 /
 ├── data/
-|   └── blog/
-|       ├── post-slug-1.md
-|       ├── post-slug-2.mdx
-|       └── ...
+│   └── blog/              # Blog posts in Markdown/MDX
 ├── public/
-│   ├── robots.txt
-│   └── favicon.ico
+│   ├── admin/             # Decap CMS admin interface
+│   │   ├── index.html
+│   │   └── config.yml
+│   └── robots.txt
 ├── src/
 │   ├── assets/
-│   │   ├── images/
-|   |   └── styles/
-|   |       └── base.css
+│   │   ├── images/        # Optimized images
+│   │   └── styles/
 │   ├── components/
-│   │   ├── atoms/
-│   │   ├── blog/
-│   │   ├── core/
-|   |   └── widgets/
-|   |       ├── Header.astro
-|   |       ├── Footer.astro
-|   |       └── ...
-│   ├── layouts/
-│   |   |── BaseLayout.astro
-│   |   └── ...
-│   ├── pages/
-│   |   ├── [...blog]/
-|   |   |   ├── [...page].astro
-|   |   |   └── [slug].astro
-│   |   ├── [...categories]/
-|   |   |   └── [category]/
-|   |   |       └── [...page].astro
-│   |   ├── [...tags]/
-|   |   |   └── [tag]/
-|   |   |       └── [...page].astro
-│   |   ├── index.astro
-|   |   ├── 404.astro
-|   |   └-- rss.xml.js
-│   ├── utils/
-│   └── config.mjs
-├── package.json
-└── ...
+│   │   ├── atoms/         # Small reusable components
+│   │   ├── blog/          # Blog-specific components
+│   │   ├── core/          # Core UI components
+│   │   └── widgets/       # Larger UI sections
+│   ├── layouts/           # Page layouts
+│   ├── pages/             # Routes and pages
+│   └── utils/             # Utility functions
+├── astro.config.mjs       # Astro configuration
+├── tailwind.config.cjs    # Tailwind configuration
+└── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Getting Started
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+### Prerequisites
 
-Any static assets, like images, can be placed in the `public/` directory if they do not require any transformation or in the `assets/` directory if they are imported directly.
+- Node.js 18.14.1 or higher
+- npm or yarn package manager
 
-[![Edit AstroWind on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://githubbox.com/onwidget/astrowind/tree/main)
+### Installation
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Update `config.mjs` and contents. Have fun!
+```bash
+# Clone the repository
+git clone https://github.com/dariafuturesea/futuresea.git
+cd futuresea
 
-<br>
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+The site will be available at `http://localhost:4321`
 
 ### Commands
 
-All commands are run from the root of the project, from a terminal:
-
 | Command               | Action                                             |
 | :-------------------- | :------------------------------------------------- |
-| `npm install`         | Installs dependencies                              |
-| `npm run dev`         | Starts local dev server at `localhost:3000`        |
-| `npm run build`       | Build your production site to `./dist/`            |
-| `npm run preview`     | Preview your build locally, before deploying       |
-| `npm run format`      | Format codes with Prettier                         |
-| `npm run lint:eslint` | Run Eslint                                         |
-| `npm run astro ...`   | Run CLI commands like `astro add`, `astro preview` |
+| `npm install`         | Install dependencies                               |
+| `npm run dev`         | Start local dev server at `localhost:4321`         |
+| `npm run build`       | Build production site to `./dist/`                 |
+| `npm run preview`     | Preview build locally before deploying             |
+| `npm run format`      | Format code with Prettier                          |
+| `npm run lint:eslint` | Run ESLint                                         |
 
-<br>
+## Content Management
 
-### Configuration
+This project uses **Decap CMS** with GitHub OAuth for content management.
 
-Basic configuration file: `./src/config.mjs`
+### Accessing the CMS
+
+1. Navigate to [https://futuresea.eu/admin/](https://futuresea.eu/admin/)
+2. Click "Login with GitHub"
+3. Authorize the application
+4. Start editing content!
+
+### CMS Setup
+
+For detailed setup instructions, see [DECAP.md](./DECAP.md)
+
+**Quick setup:**
+1. Create a GitHub OAuth app
+2. Add OAuth provider in Netlify (Site Settings → Access control → OAuth)
+3. Access CMS at `/admin/`
+
+## Configuration
+
+Basic site configuration is in `src/config.mjs`:
 
 ```javascript
 export const SITE = {
-  name: 'Example',
-
-  origin: 'https://example.com',
-  basePathname: '/', // Change this if you need to deploy to Github Pages, for example
-  trailingSlash: false, // Generate permalinks with or without "/" at the end
-
-  title: 'Example - This is the homepage title of Example',
-  description: 'This is the homepage description of Example',
-
-  googleAnalyticsId: false, // or "G-XXXXXXXXXX",
-  googleSiteVerificationId: false, // or some value,
-};
-
-export const BLOG = {
-  disabled: false,
-  postsPerPage: 4,
-
-  blog: {
-    disabled: false,
-    pathname: 'blog', // blog main path, you can change this to "articles" (/articles)
-  },
-
-  post: {
-    disabled: false,
-    pathname: '', // empty for /some-post, value for /pathname/some-post
-  },
-
-  category: {
-    disabled: false,
-    pathname: 'category', // set empty to change from /category/some-category to /some-category
-  },
-
-  tag: {
-    disabled: false,
-    pathname: 'tag', // set empty to change from /tag/some-tag to /some-tag
-  },
+  name: 'FutureSea',
+  origin: 'https://futuresea.eu',
+  basePathname: '/',
+  trailingSlash: false,
+  title: 'More budućnosti…',
+  description: '…je projekt koji za cilj ima prijenos znanja i jačanje svijesti o važnosti oceana za život na Zemlji kod djece školskog uzrasta.',
+  googleAnalyticsId: "G-51MGD17LC3",
 };
 ```
 
-<br>
+## Deployment
 
-### Deploy
+The site is automatically deployed to Netlify when changes are pushed to the `main` branch.
 
-#### Deploy to production (manual)
+### Environment Variables
 
-You can create an optimized production build with:
+No environment variables are required for basic functionality. Google Analytics is configured in `src/config.mjs`.
 
-```shell
-npm run build
-```
+### Build Settings (Netlify)
 
-Now, your website is ready to be deployed. All generated files are located at
-`dist` folder, which you can deploy the folder to any hosting service you
-prefer.
+- **Build command**: `npm run build`
+- **Publish directory**: `dist`
+- **Node version**: 18
 
-#### Deploy to Netlify
+## Recent Updates
 
-Clone this repository on own GitHub account and deploy to Netlify:
+### Astro v5 Migration (October 2024)
 
-[![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/onwidget/astrowind)
+Successfully migrated from Astro v1.8 to v5.14.1:
+- Replaced deprecated `@astrojs/image` with `astro:assets`
+- Updated all integrations to v5-compatible versions
+- Migrated from `@astrolib/seo` to custom SEO implementation
+- Updated icon system to `astro-icon` v1.1.5
+- Fixed Netlify build image optimization issues
 
-#### Deploy to Vercel
-
-Clone this repository on own GitHub account and deploy to Vercel:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonwidget%2Fastrowind)
-
-<br>
-
-## Roadmap
-
-### Base
-
-- [ ] Improve blog design (More generic design that adapts to more needs).
-- [ ] Create component or utilities for related posts.
-- [ ] Add more _shortcodes_ or _embed_ functions to posts in Markdown: (eg Video, Tweet...).
-- [ ] Add more Tailwind components useful for most scenarios (Features, Contact, Call to Actions, Content, FAQs...)
-- [ ] Add commonly used example pages (Ex: About, Terms, Profile, Services...).
-- [ ] Create detailed documentation with best practices and redesign tips.
-
-### Advanced
-
-- [ ] Create external library or place with useful Tailwind components.
-- [ ] Create examples of AstroWind in CodeSanbox or a similar platform that can be easily synchronized with new updates. (Redesign, Integration with React or Svelte components, Use of Tailwind plugins, Connection to headless CMS ...).
-
-<br>
-
-## Frequently Asked Questions
-
-- Why?
--
--
-
-<br>
-
-## Related projects
-
-- [Qwind](https://qwind.pages.dev/) - A template to make your website using Qwik + Tailwind CSS.
+See the [upgrade/astro-v5 branch](https://github.com/dariafuturesea/futuresea/tree/upgrade/astro-v5) for migration details.
 
 ## Contributing
 
-If you have any idea, suggestions or find any bugs, feel free to open a discussion, an issue or create a pull request.
-That would be very useful for all of us and we would be happy to listen and take action.
+This project is maintained by the Institute of Oceanography and Fisheries. For contributions or suggestions, please contact the project team.
 
-## Acknowledgements
+## Project Partners
 
-Initially created by [onWidget](https://onwidget.com) and maintained by a community of [contributors](https://github.com/onwidget/astrowind/graphs/contributors).
+- **Adris Foundation** - Project co-financing through the Creativity, Ecology, Heritage and Kindness Program
+- **Institute of Oceanography and Fisheries** - Project implementation
+- **UN Ocean Decade** - Supporting the Decade of Ocean Science for Sustainable Development (2021-2030)
 
 ## License
 
-**AstroWind** is licensed under the Unlicense license — see the [LICENSE](https://github.com/onwidget/astrowind/blob/main/LICENSE.md) file for details.
+This project is developed for educational purposes as part of the FutureSea initiative.
+
+## Contact
+
+For more information about the project, visit [https://futuresea.eu](https://futuresea.eu)
+
+---
+
+Built with [Astro](https://astro.build/) 🚀

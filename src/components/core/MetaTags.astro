@@ -1,6 +1,5 @@
 ---
-import { AstroSeo } from '@astrolib/seo';
-import { getImage } from '@astrojs/image';
+import { getImage } from 'astro:assets';
 import { getRelativeUrlByFilePath } from '~/utils/directories';
 
 import defaultImageSrc from '~/assets/images/default.png';
@@ -10,12 +9,13 @@ import Fonts from '../atoms/Fonts.astro';
 import ExtraMetaTags from '../atoms/ExtraMetaTags.astro';
 import SplitbeeAnalytics from './SplitbeeAnalytics.astro';
 
-const { src: defaultImage } = await getImage({
+const defaultImageResult = await getImage({
 	src: defaultImageSrc,
-	alt: 'Default image',
+	format: 'jpg',
 	width: 1200,
 	height: 628,
 });
+const defaultImage = defaultImageResult.src;
 
 const {
 	title = SITE.name,
@@ -41,33 +41,25 @@ const image =
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<AstroSeo
-	title={title}
-	description={description}
-	canonical={canonical}
-	noindex={noindex}
-	nofollow={nofollow}
-	openGraph={{
-		url: canonical,
-		title: ogTitle,
-		description: description,
-		type: ogType,
-		images: image
-			? [
-					{
-						url: image.toString(),
-						alt: ogTitle,
-					},
-			  ]
-			: undefined,
-		// site_name: 'SiteName',
-	}}
-	twitter={{
-		// handle: '@handle',
-		// site: '@site',
-		cardType: image ? 'summary_large_image' : undefined,
-	}}
-/>
+<title>{title}</title>
+<meta name="description" content={description} />
+{canonical && <link rel="canonical" href={canonical} />}
+{noindex && <meta name="robots" content="noindex" />}
+{nofollow && <meta name="robots" content="nofollow" />}
+
+<!-- Open Graph -->
+{canonical && <meta property="og:url" content={canonical} />}
+<meta property="og:title" content={ogTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:type" content={ogType} />
+{image && <meta property="og:image" content={image.toString()} />}
+{image && <meta property="og:image:alt" content={ogTitle} />}
+
+<!-- Twitter Card -->
+{image && <meta name="twitter:card" content="summary_large_image" />}
+{image && <meta name="twitter:image" content={image.toString()} />}
+<meta name="twitter:title" content={ogTitle} />
+<meta name="twitter:description" content={description} />
 
 <Fonts />
 

@@ -1,7 +1,10 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import { SITE } from '~/config.mjs';
-import { Picture } from '@astrojs/image/components';
+import { Image } from 'astro:assets';
+import naslovnaImg from '~/assets/images/naslovna.jpg';
+import sdg2Img from '~/assets/images/sdg2.jpg';
+import radioniceImg from '~/assets/images/radionice.jpg';
 //import Error404 from '~/components/widgets/Error404.astro';
 
 const title = `O projektu - More Budućnosti`;
@@ -18,11 +21,10 @@ const title = `O projektu - More Budućnosti`;
 				O projektu
 			</h1>
 			
-					<img
-						src="~/assets/images/naslovna.jpg"
+					<Image
+						src={naslovnaImg}
 						class="max-w-full lg:max-w-6xl mx-auto mt-4 mb-6 sm:rounded-md bg-gray-400 dark:bg-slate-700"
-						sizes="(max-width: 100px) 400px, 900px"
-						alt=""
+						alt="More Budućnosti"
 						loading="eager"
 					/>
 		</header>
@@ -33,28 +35,24 @@ const title = `O projektu - More Budućnosti`;
 
 		<!-- <img src="https://www.adris.hr/css/images/adris-logo.svg" class="w-full h-44" />-->
 
-					<Picture
+					<Image
 						class=""
-						src={import('~/assets/images/sdg2.jpg')}
+						src={sdg2Img}
 						widths={[400, 768, 1480]}
 						sizes="(max-width: 900px) 100vw, 432px"
 						alt="SDG"
-						aspectRatio=""
-						width={1480}
-						height={833}
+						
 					/>
 
 		<p class='text-justify'> U današnje doba kada smo svakodnevno svjedoci velikih, brzih i često negativnih promjena u okolišu <b>poticanje pismenosti o moru je vjerojatno važnije nego ikad prije</b>. Tijekom zadnjeg desetljeća i u Hrvatskoj su se počeli ulagati napori kako bi se podigla svijest o važnosti oceana za život na Zemlji, o prednostima koje imamo kao pomorska zemlja te mogućnostima koje nam more daje. Usprkos dosadašnjim nastojanjima, mišljenja smo da kao društvo još uvijek nismo ni blizu cilja, odnosno nismo osvijestili važnost mora kao i njihova očuvanja za buduće generacije. Potrebno je uložiti još više napora od strane znanstvenih i obrazovnih institucija, vladinih i nevladinih organizacija, kao i svih zainteresiranih pojedinaca, kako bi se osiguralo razumijevanje važnosti očuvanja oceana.  
 		
-			<Picture
+			<Image
 						class=""
-						src={import('~/assets/images/radionice.jpg')}
+						src={radioniceImg}
 						widths={[400, 768, 1480]}
 						sizes="(max-width: 900px) 100vw, 432px"
 						alt="SDG"
-						aspectRatio=""
-						width={1480}
-						height={833}
+						
 					/>
 			
 		<p class='text-justify'>Imajući u vidu da djeca u svojoj ranoj dobi imaju najzamjetniji rast senzibilnosti, glavni cilj nam je senzibilizirati ih prema okolišu i održivom razvoju te potaknuti njihovo kreativno izražavanje na temu mora. Kako bi se to ostvarilo potrebna je <b>jača suradnja između znanstvenih i obrazovnih institucija</b>. Takva suradnja za cilj treba imati prijenos znanja i jačanje svijesti o važnosti oceana za život na Zemlji. Dosadašnje iskustvo u popularizaciji morskih tema među školskom djecom pokazalo je da djeca u većim priobalnim sredinama imaju veći broj aktivnosti s morskim temama u odnosu na djecu u ruralnim područjima. Za razliku od škola u većim gradovima, te škole često nemaju takve prilike. Također, morske teme su u osnovnoj školi često nedovoljno zastupljena. Stoga je glavni cilj predloženog projekta <b>doprinijeti razumijevanju važnosti očuvanja oceana učenicima u osnovnim školama u manjim gradovima i ruralnim područjima duž jadranske obale te u unutrašnjosti. </b></p>

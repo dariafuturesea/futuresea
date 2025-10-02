@@ -5,10 +5,9 @@ import { defineConfig } from 'astro/config';
 
 import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
-import image from '@astrojs/image';
 import mdx from '@astrojs/mdx';
 import partytown from '@astrojs/partytown';
-import NetlifyCMS from 'astro-netlify-cms';
+import icon from 'astro-icon';
 
 import { remarkReadingTime } from './src/utils/frontmatter.mjs';
 import { SITE } from './src/config.mjs';
@@ -26,52 +25,18 @@ export default defineConfig({
 	output: 'static',
 
 	integrations: [
-		NetlifyCMS({
-            config: {
-              backend: {
-                name: 'git-gateway',
-                repo: 'dariafuturesea/futuresea',
-                branch: 'main',
-              },
-              media_folder: 'src/assets/images',
-              public_folder: '~/assets/images',
-              collections: [
-                {
-                  name: 'posts',
-                  label: 'Posts',
-                  label_singular: 'Post',
-                  folder: 'data/blog',
-                  create: true,
-                  delete: true,
-                  fields: [
-					{
-						name: 'publishDate',
-						widget: 'datetime',
-						format: 'YYYY-MM-DDTHH:mm:ssZ',
-						date_format: 'DD MMM YYYY',
-						time_format: false,
-						label: 'Publish Date',
-					},
-                    { name: 'title', widget: 'string', label: 'Post Title' },
-                    { name: 'description', widget: 'string', label: 'Description', required: false },
-					{ name: 'image', widget: 'image', choose_url: true, label: 'Image', default: false },
-					{ name: 'category', widget: 'list', label: 'Category', default: false },
-					{ name: 'tags', widget: 'list', label: 'Tags', default: false },
-                    { name: 'body', widget: 'markdown', label: 'Post Body' },
-                  ],
-              	}],
-			},
-		}),
 		tailwind({
 			config: {
 				applyBaseStyles: false,
 			},
 		}),
 		sitemap(),
-		image({
-			serviceEntryPoint: '@astrojs/image/sharp',
-		}),
 		mdx(),
+		icon({
+			include: {
+				tabler: ['*'],
+			},
+		}),
 
 		...whenExternalScripts(() =>
 			partytown({
@@ -82,7 +47,6 @@ export default defineConfig({
 
 	markdown: {
 		remarkPlugins: [remarkReadingTime],
-		extendDefaultPlugins: true,
 	},
 
 	vite: {

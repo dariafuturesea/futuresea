@@ -1,7 +1,10 @@
 ---
-import { Icon } from 'astro-icon';
+import { Icon } from 'astro-icon/components';
 import { getHomePermalink, getRelativeLink } from '~/utils/permalinks';
-import { Picture } from '@astrojs/image/components';
+import { Image } from 'astro:assets';
+import decadeLogoImg from '~/assets/images/decadelogo.jpg';
+import adrisImg from '~/assets/images/ADRIS.png';
+import iorLogoImg from '~/assets/images/IORlogo.jpg';
 
 const links = [
 	/*{
@@ -59,35 +62,32 @@ const social = [
 			<!--Logotipovi -->
 			<div class="lg:mb-0 mb-0">
 				<a href="https://oceandecade.org/" target="_blank">
-					<Picture
+					<Image
 					class=""
-					src={import('~/assets/images/decadelogo.jpg')}
+					src={decadeLogoImg}
 					widths={[400, 768]}
 					sizes="(max-width: 768px) 100vw, 432px"
-					alt="UN Ocean Decade"
-					aspectRatio=""/>
+					alt="UN Ocean Decade"/>
 				</a>
 			</div>
 			<div class="lg:mb-0 mb-0">
 				<a href="https://www.adris.hr/odnosi-s-javnoscu/zaklada-adris/o-zakladi/" target="_blank">
-					<Picture
+					<Image
 					class=""
-					src={import('~/assets/images/ADRIS.png')}
+					src={adrisImg}
 					widths={[400, 768]}
 					sizes="(max-width: 768px) 100vw, 432px"
-					alt="Adris"
-					aspectRatio=""/>
+					alt="Adris"/>
 				</a>
 			</div>
 			<div class="lg:mb-0 mb-0">
 				<a href="https://www.izor.hr/" target="_blank">
-					<Picture
+					<Image
 					class=""
-					src={import('~/assets/images/IORlogo.jpg')}
+					src={iorLogoImg}
 					widths={[400, 768]}
 					sizes="(max-width: 768px) 100vw, 432px"
-					alt="IZOR"
-					aspectRatio=""/>
+					alt="IZOR"/>
 				</a>
 			</div>
 	

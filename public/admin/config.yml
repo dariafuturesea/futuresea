@@ -1,0 +1,48 @@
+backend:
+  name: github
+  repo: dariafuturesea/futuresea
+  branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+
+media_folder: "src/assets/images"
+public_folder: "~/assets/images"
+
+collections:
+  - name: "posts"
+    label: "Blog Posts"
+    label_singular: "Blog Post"
+    folder: "data/blog"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    fields:
+      - name: "publishDate"
+        label: "Publish Date"
+        widget: "datetime"
+        format: "YYYY-MM-DDTHH:mm:ssZ"
+        date_format: "DD MMM YYYY"
+        time_format: false
+      - name: "title"
+        label: "Post Title"
+        widget: "string"
+      - name: "description"
+        label: "Description"
+        widget: "string"
+        required: false
+      - name: "image"
+        label: "Featured Image"
+        widget: "image"
+        choose_url: true
+        required: false
+      - name: "category"
+        label: "Categories"
+        widget: "list"
+        required: false
+      - name: "tags"
+        label: "Tags"
+        widget: "list"
+        required: false
+      - name: "body"
+        label: "Post Body"
+        widget: "markdown"
